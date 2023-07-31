@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+int hcf_number(int a,int b){
+    
+    while(a != b){
+        if(a >b){
+            a=a-b;
+        }
+        else
+        {
+            b=b-a;
+        }
+    }
+    printf("hcf number:");
+    printf("%d",b);
+    
+}
+
+int main()
+{
+    int a, b;
+    printf("Enter the number:");
+    scanf("%d%d",&a,&b);
+    hcf_number(a,b);
+
+    return 0;
+}

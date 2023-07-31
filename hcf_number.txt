@@ -1,0 +1,36 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+int hef_lcm(int a, int b){
+    int temp;
+    if(a<b)
+    {
+        temp=a;
+        a=b;
+        b=temp;
+    }
+    while(a%b != 0){
+        temp=b;
+        b=a%b;
+        a=temp;
+    }
+    printf("%d",b);
+    return 0;
+    
+}
+
+int main()
+{
+    int a,b;
+    printf("Enter two number:");
+    scanf("%d%d",&a,&b);
+    hef_lcm(a,b);
+
+    return 0;
+}

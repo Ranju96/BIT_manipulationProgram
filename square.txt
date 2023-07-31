@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double num = 5.0;
+    double square = num * num;
+    printf("Square of %f is %f\n", num, square);
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double num = 25.0;
+    double squareRoot = sqrt(num);
+    printf("Square root of %f is %f\n", num, squareRoot);
+    return 0;
+}

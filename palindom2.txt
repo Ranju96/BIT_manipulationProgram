@@ -1,0 +1,34 @@
+
+//palindrom using string
+#include <stdio.h>
+void palindrom_string(char string[20]){
+    int i;
+    int flag=0;
+    int length=strlen(string);
+    
+    for(i=0; i<length; i++){
+        if(string[i] != string[length-i-1]){
+            flag=1;
+            break;
+        }
+    }
+    if(flag){
+       printf("number is not palindrom ");
+   }
+   else
+   {
+       printf("number is palindrom");
+   }
+    
+}
+int main()
+{
+   int string[20];
+   printf("Enter the string:");
+   scanf("%s",string);
+   palindrom_string(string);
+   
+    return 0;
+    
+}
+

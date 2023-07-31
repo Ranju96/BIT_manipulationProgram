@@ -1,0 +1,40 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+void armstrong_number(int num){
+    int rem, sum=0;
+    int temp=num;
+    
+    
+    while(temp != 0){
+        rem=temp%10;
+        sum= sum+rem*rem*rem;
+        temp=temp/10;
+    }
+    if(num==sum)
+    {
+       printf("number is armstrong ");
+    }
+    else
+    {
+       printf("number is not armstrong");
+    }
+    
+}
+
+
+int main()
+{
+   int num;
+   printf("Enter the number:");
+   scanf("%d",&num);
+   armstrong_number(num);
+   
+    return 0;
+}

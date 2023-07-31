@@ -1,0 +1,30 @@
+
+//lcm
+#include <stdio.h>
+int lcm_number(int a,int b){
+    int x=a;
+    int y=b;
+    
+    while(a != b){
+        if(a >b){
+            b=b+y;
+        }
+        else
+        {
+            a=a+x;
+        }
+    }
+    printf("lcm number:");
+    printf("%d",b);
+    
+}
+
+int main()
+{
+    int a, b;
+    printf("Enter the number:");
+    scanf("%d%d",&a,&b);
+    lcm_number(a,b);
+
+    return 0;
+}

@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int camel_Case(char *str) {
+    int count = 1;  // Start with 1 as the first word is not capitalized
+    
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            count++;
+        }
+    }
+    
+    return count;
+}
+
+int main() {
+    char str[20];
+    
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    
+    int camel = camel_Case(str);
+    printf("The number of words in camel case: %d\n", camel);
+    
+    return 0;
+}

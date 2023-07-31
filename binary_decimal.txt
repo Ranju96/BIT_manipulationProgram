@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+int binary(int num){
+    
+    int sum=0;  
+    int rem;
+    int base=1;
+    while(num>0){
+        
+        rem=num%10;
+        sum=sum+rem*base;
+        num=num/10;
+        base=base*2;
+    }
+    printf("%d",sum);
+    
+}
+
+int main()
+{
+    int num=1111;
+    binary(num);
+    
+    return 0;
+}

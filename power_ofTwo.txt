@@ -1,0 +1,29 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include<stdbool.h>
+bool power_ofTwo(int n){
+    int mask = n-1;
+    return !(n & mask);
+}
+
+int main()
+{
+    int n=8;
+    if(power_ofTwo(n)){
+        printf("is power of 2");
+        
+    }
+    else
+    {
+        printf("is not power of 2");
+    }
+
+    return 0;
+}

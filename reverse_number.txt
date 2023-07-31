@@ -1,0 +1,22 @@
+
+
+#include <stdio.h>
+int reverse_number(int num){
+    
+    int sum=0;
+    while(num != 0){
+        int rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d",sum);
+    
+}
+
+int main()
+{
+    int num=1234;
+    reverse_number(num);
+    
+    return 0;
+}
